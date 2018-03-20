@@ -1,0 +1,10 @@
+node_modules/
+server/logs/
+server/target/
+server/out/
+frontend/node_modules/
+frontend/dist/
+dist/
+logs/
+target/
+out/
