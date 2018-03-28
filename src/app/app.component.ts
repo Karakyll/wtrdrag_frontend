@@ -8,7 +8,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class AppComponent {
 
-  title = 'app';
+  title = 'Way in the race';
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');

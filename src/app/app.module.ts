@@ -4,9 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
@@ -72,7 +71,8 @@ const appRoutes: Routes = [
     SponsorService,
     CarService,
     TrackService,
-    RaceService
+    RaceService,
+    TranslateService
   ],
   bootstrap: [AppComponent]
 })
