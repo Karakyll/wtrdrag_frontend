@@ -27,7 +27,7 @@
     <button class="btn" (click)=onSubmit() *ngIf=!submitted>{{ 'cars.buttons.addNewCar' | translate }}</button>
     <div *ngIf=submitted>
       <h2>{{ 'cars.form.text' | translate }}</h2>
-      <form (ngSubmit)="onSubmit()" #carForm="ngForm">
+      <form id="addForm" (ngSubmit)="onSubmit()" #carForm="ngForm">
         <div class="form-group row">
           <div class="col-xs-4">
             <label for="mark">{{ 'cars.form.mark' | translate }}</label>

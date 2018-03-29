@@ -1,14 +1,15 @@
 import { AppPage } from './app.po';
 
-describe('angular-first-project App', () => {
+describe('App main page', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should load Navbar', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getNavbar()).toBeTruthy('Navebar is apear.');
   });
+  
 });
